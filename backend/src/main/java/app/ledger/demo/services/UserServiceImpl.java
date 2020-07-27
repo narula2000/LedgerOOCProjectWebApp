@@ -16,9 +16,19 @@ public class UserServiceImpl implements app.ledger.demo.Services.UserService {
     }
 
     @Override
-    public boolean  addTransaction(double debit, double credit) {
+    public boolean  addTransaction(String debit, double credit) {
         //take the total credit balance from the adding transaction
         //take the credit from from querying the data from the table
         return true;
+    }
+
+    @Override
+    public boolean editCategory(String initialCategory, String finalCategory, double amount) {
+        return false;
+    }
+
+    @Override
+    public boolean removeTransactions(String transactionID) {
+        return false;
     }
 }

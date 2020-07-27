@@ -1,14 +1,15 @@
 package app.ledger.demo.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table(	name = "income",
+        uniqueConstraints = {
+                @UniqueConstraint(columnNames = "incomeId")
+        })
 public class Income {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String incomeId;
     private String userId;
     private double salary;
@@ -22,6 +23,10 @@ public class Income {
     private double dividends;
     private double investments;
     private double others;
+    @ManyToMany(fetch = FetchType.LAZY)
+    @JoinTable(	name = "user",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "incomeId"))
 
     public void setIncomeId(String incomeId) {
         this.incomeId = incomeId;

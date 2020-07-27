@@ -2,6 +2,11 @@
 <v-app class="theme--dark">
 <nav>
 
+      <v-spacer ></v-spacer>
+
+      <v-spacer ></v-spacer>
+
+
       <v-toolbar-title class="text-center">User Profile</v-toolbar-title>
 
       <v-spacer></v-spacer>

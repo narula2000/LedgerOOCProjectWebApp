@@ -23,7 +23,12 @@ public class UserServiceImpl implements app.ledger.demo.Services.UserService {
     }
 
     @Override
-    public boolean editCategory(String initialCategory, String finalCategory, double amount) {
+    public boolean editCategory(String tansactionID, String initialCategory, String finalCategory, double amount) {
+        return false;
+    }
+
+    @Override
+    public boolean editAmount(String transactionID, double finalAmount) {
         return false;
     }
 

@@ -1,6 +1,11 @@
 <template>
   <div class="col-md-12">
     <div class="card card-container">
+      <header>
+        <h3>
+          Register
+        </h3>
+      </header>
       <form name="form" @submit.prevent="handleRegister">
         <div v-if="!successful">
           <div class="form-group">

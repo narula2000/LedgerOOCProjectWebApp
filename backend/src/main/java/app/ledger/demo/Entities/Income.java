@@ -8,7 +8,7 @@ import javax.persistence.Id;
 @Entity
 public class Income {
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private String incomeId;
     private String userId;
     private double salary;
@@ -22,81 +22,107 @@ public class Income {
     private double dividends;
     private double investments;
     private double others;
-    public void setIncomeId(String incomeId){
+
+    public void setIncomeId(String incomeId) {
         this.incomeId = incomeId;
     }
-    public String getIncomeId(){
+
+    public String getIncomeId() {
         return incomeId;
     }
-    public void setUserId(String userId){
+
+    public void setUserId(String userId) {
         this.userId = userId;
     }
-    public String getUserId(){
+
+    public String getUserId() {
         return userId;
     }
-    public void setSalary(double salary){
+
+    public void setSalary(double salary) {
         this.salary = salary;
     }
-    public double getSalary(){
+
+    public double getSalary() {
         return salary;
     }
-    public void setAwards(double awards){
+
+    public void setAwards(double awards) {
         this.awards = awards;
     }
-    public double getAwards(){
+
+    public double getAwards() {
         return awards;
     }
-    public void setGrants(double grants){
+
+    public void setGrants(double grants) {
         this.grants = grants;
     }
-    public double getGrants(){
+
+    public double getGrants() {
         return grants;
     }
-    public void setSales(double sales){
+
+    public void setSales(double sales) {
         this.sales = sales;
     }
-    public double getSales(){
+
+    public double getSales() {
         return sales;
     }
-    public void setRental(double rental){
+
+    public void setRental(double rental) {
         this.rental = rental;
     }
-    public double getRental(){
+
+    public double getRental() {
         return rental;
     }
-    public void setRefunds(double refunds){
+
+    public void setRefunds(double refunds) {
         this.refunds = refunds;
     }
-    public double getRefunds(){
+
+    public double getRefunds() {
         return this.refunds;
     }
-    public void setCoupons(double coupons){
+
+    public void setCoupons(double coupons) {
         this.coupons = coupons;
     }
-    public double getCoupons(){
+
+    public double getCoupons() {
         return this.coupons;
     }
-    public void setLottery(double lottery){
+
+    public void setLottery(double lottery) {
         this.lottery = lottery;
     }
-    public double getLottery(){
+
+    public double getLottery() {
         return lottery;
     }
-    public void setDividends(double dividends){
+
+    public void setDividends(double dividends) {
         this.dividends = dividends;
     }
-    public double getDividends(){
+
+    public double getDividends() {
         return dividends;
     }
+
     public void setInvestments(double investments) {
         this.investments = investments;
     }
+
     public double getInvestments() {
         return investments;
     }
+
     public void setOthers(double others) {
         this.others = others;
     }
+
     public double getOthers() {
         return others;
     }

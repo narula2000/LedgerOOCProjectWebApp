@@ -5,13 +5,13 @@
       <v-toolbar-title class="text-center">User Profile</v-toolbar-title>
 
       <v-spacer></v-spacer>
-    
-      <v-btn to="/login" class="mr-3" text medium color="black"> 
-      <span>sign-out </span>
-      <v-icon color="black">mdi-exit-to-app</v-icon>
+
+      <v-btn  class="mr-3" text medium color="white"> <router-link to="/login" tag="li"> <span>sign-out </span> </router-link>
+
+      <v-icon color="white">mdi-exit-to-app</v-icon>
       </v-btn>
 
-      
+
 
   <v-data-table
     :headers="headers"
@@ -38,7 +38,7 @@
           { text: 'Use'},
           { text: 'Final' },
         ],
-        
+
       }
     },
   }

@@ -23,6 +23,9 @@
                 <v-btn to="/history">
                   <v-icon  x-large>mdi-code-tags</v-icon>
                 </v-btn>
+                <v-btn to="/income">
+                  <v-icon  x-large>mdi-code-tags</v-icon>
+                </v-btn>
               </template>
               <span>Source</span>
             </v-tooltip>

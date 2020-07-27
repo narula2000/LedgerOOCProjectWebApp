@@ -47,21 +47,25 @@
             >{{errors.first('password')}}</div>
           </div>
           <div class="form-group">
-            <button class="btn btn-primary btn-block">sign-up</button>
+            <button class="btn btn-primary btn-block">  Sign-Up  </button>
           </div>
         </div>
-        <v-btn to="/login" class="mr-3" text medium color="primary"> sign-in </v-btn>
-       
-        <v-icon>mdi-account-key</v-icon>
-       
+        <v-row
+    align="center"
+    justify="center"
+  >
+        <v-btn to="/login" class="mr-3" text medium color="primary"> sign-in
+         <v-icon right>mdi-account-key</v-icon>
+        </v-btn>
         <br>
         <br>
-        <v-btn to="/home" class="mr-3" text medium> home </v-btn>
-       
-        <v-icon>mdi-home-circle</v-icon>
-       
+        <v-btn to="/home" class="mr-3" text medium> home
+        <v-icon right>mdi-home-circle</v-icon>
+        </v-btn>
+        </v-row>
+
       </form>
-      
+
 
       <div
         v-if="message"

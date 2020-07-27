@@ -2,5 +2,8 @@ package app.ledger.demo.model;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface ExpenseRepository extends JpaRepository<Expense, String> {
+import java.util.Optional;
+
+public interface ExpenseRepository extends JpaRepository<Expense, Long> {
+    Optional<Expense> findByExpenseId(String expenseId);
 }

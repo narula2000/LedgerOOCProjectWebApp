@@ -18,9 +18,7 @@
           align="center"
           justify="center"
         >
-        <v-btn fab color="blue" dark outlined >salary </v-btn>
-         
-        
+        <v-btn   color="success" dark outlined >salary </v-btn>
         <v-card-title>
           <div>
             <v-icon> mdi-format-align-middle</v-icon>
@@ -37,8 +35,8 @@
           align="center"
           justify="center"
         >
-        <v-btn fab color="blue" dark outlined >awards </v-btn>
-         
+        <v-btn   color="success" dark outlined >awards </v-btn>
+
         <v-card-title>
           <div>
             <v-icon> mdi-format-align-middle</v-icon>
@@ -55,8 +53,8 @@
           align="center"
           justify="center"
         >
-        <v-btn fab color="blue" dark outlined >grants </v-btn>
-       
+        <v-btn   color="success" dark outlined >grants </v-btn>
+
         <v-card-title>
           <div>
             <v-icon> mdi-format-align-middle</v-icon>
@@ -72,9 +70,9 @@
           align="center"
           justify="center"
         >
-        <v-btn fab color="blue" dark outlined >sales </v-btn>
-         
-        
+        <v-btn   color="success" dark outlined >sales </v-btn>
+
+
         <v-card-title>
           <div>
             <v-icon> mdi-format-align-middle</v-icon>
@@ -93,9 +91,9 @@
           align="center"
           justify="center"
         >
-        <v-btn fab color="blue" dark outlined >rentals </v-btn>
-         
-         
+        <v-btn   color="success" dark outlined >rentals </v-btn>
+
+
         <v-card-title>
           <div>
             <v-icon> mdi-format-align-middle</v-icon>
@@ -112,9 +110,9 @@
           align="center"
           justify="center"
         >
-        <v-btn fab color="blue" dark outlined >refund </v-btn>
-         
-          
+        <v-btn   color="success" dark outlined >refund </v-btn>
+
+
         <v-card-title>
           <div>
             <v-icon> mdi-format-align-middle</v-icon>
@@ -131,9 +129,9 @@
           align="center"
           justify="center"
         >
-        <v-btn fab color="blue" dark outlined >coupons </v-btn>
-         
-        
+        <v-btn   color="success" dark outlined >coupons </v-btn>
+
+
         <v-card-title>
           <div>
             <v-icon> mdi-format-align-middle</v-icon>
@@ -149,9 +147,9 @@
           align="center"
           justify="center"
         >
-        <v-btn fab color="blue" dark outlined >lottery </v-btn>
-         
-          
+        <v-btn   color="success" dark outlined >lottery </v-btn>
+
+
         <v-card-title>
           <div>
             <v-icon> mdi-format-align-middle</v-icon>
@@ -170,8 +168,8 @@
           align="center"
           justify="center"
         >
-        <v-btn fab color="blue" dark outlined >dividends </v-btn>
-         
+        <v-btn   color="success" dark outlined >dividends </v-btn>
+
         <v-card-title>
           <div>
             <v-icon> mdi-format-align-middle</v-icon>
@@ -188,8 +186,8 @@
           align="center"
           justify="center"
         >
-        <v-btn fab color="blue" dark outlined >investments </v-btn>
-         
+        <v-btn   color="success" dark outlined >investments </v-btn>
+
         <v-card-title>
           <div>
             <v-icon> mdi-format-align-middle</v-icon>

@@ -1,4 +1,4 @@
-package app.ledger.demo.Entities;
+package app.ledger.demo.model;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -125,4 +125,3 @@ public class Expense {
         return others;
     }
 }
-

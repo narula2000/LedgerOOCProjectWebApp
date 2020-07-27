@@ -1,4 +1,4 @@
-package app.ledger.demo.Services;
+package app.ledger.demo.services;
 
 import java.util.List;
 

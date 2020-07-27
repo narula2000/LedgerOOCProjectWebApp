@@ -1,4 +1,4 @@
-package app.ledger.demo.Entities;
+package app.ledger.demo.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -127,4 +127,3 @@ public class Income {
         return others;
     }
 }
-

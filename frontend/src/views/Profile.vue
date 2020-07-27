@@ -20,8 +20,7 @@
           <v-col class="shrink">
             <v-tooltip right>
               <template v-slot:activator="{  }">
-                <v-btn to="/history"
-                >
+                <v-btn to="/history">
                   <v-icon  x-large>mdi-code-tags</v-icon>
                 </v-btn>
               </template>

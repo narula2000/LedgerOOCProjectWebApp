@@ -23,10 +23,6 @@ public class Income {
     private double dividends;
     private double investments;
     private double others;
-    @ManyToMany(fetch = FetchType.LAZY)
-    @JoinTable(	name = "user",
-            joinColumns = @JoinColumn(name = "user_id"),
-            inverseJoinColumns = @JoinColumn(name = "incomeId"))
 
     public void setIncomeId(String incomeId) {
         this.incomeId = incomeId;

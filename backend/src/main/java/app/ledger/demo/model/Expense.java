@@ -24,11 +24,6 @@ public class Expense {
     private double travel;
     private double others;
 
-    @ManyToMany(fetch = FetchType.LAZY)
-    @JoinTable(	name = "user",
-            joinColumns = @JoinColumn(name = "user_Id"),
-            inverseJoinColumns = @JoinColumn(name = "expenseId"))
-
     public void setExpenseId(String expenseId) {
         this.expenseId = expenseId;
     }

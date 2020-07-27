@@ -22,7 +22,7 @@
          
         <v-card-title>
           <div>
-            <v-icon right> mdi-format-align-middle</v-icon>
+            <v-icon right> mdi-food-fork-drink</v-icon>
           </div>
         </v-card-title>
         </v-row>
@@ -41,7 +41,7 @@
           
         <v-card-title>
           <div>
-            <v-icon right> mdi-format-align-middle</v-icon>
+            <v-icon right> mdi-bus</v-icon>
           </div>
         </v-card-title>
         </v-row>
@@ -60,7 +60,7 @@
         
         <v-card-title>
           <div>
-            <v-icon> mdi-format-align-middle</v-icon>
+            <v-icon> mdi-car</v-icon>
           </div>
         </v-card-title>
         </v-row>
@@ -78,7 +78,7 @@
          
         <v-card-title>
           <div>
-            <v-icon> mdi-format-align-middle</v-icon>
+            <v-icon> mdi-popcorn</v-icon>
           </div>
         </v-card-title>
         </v-row>
@@ -99,7 +99,7 @@
         
         <v-card-title>
           <div>
-            <v-icon> mdi-format-align-middle</v-icon>
+            <v-icon> mdi-pencil-circle</v-icon>
           </div>
         </v-card-title>
         </v-row>
@@ -137,7 +137,7 @@
         
         <v-card-title>
           <div>
-            <v-icon> mdi-format-align-middle</v-icon>
+            <v-icon> mdi-cellphone</v-icon>
           </div>
         </v-card-title>
         </v-row>
@@ -155,7 +155,7 @@
           
         <v-card-title>
           <div>
-            <v-icon> mdi-format-align-middle</v-icon>
+            <v-icon> mdi-hospital</v-icon>
           </div>
         </v-card-title>
         </v-row>
@@ -176,7 +176,7 @@
           
         <v-card-title>
           <div>
-            <v-icon> mdi-format-align-middle</v-icon>
+            <v-icon> mdi-school</v-icon>
           </div>
         </v-card-title>
         </v-row>
@@ -195,7 +195,7 @@
           
         <v-card-title>
           <div>
-            <v-icon> mdi-format-align-middle</v-icon>
+            <v-icon> mdi-wallet-travel</v-icon>
           </div>
         </v-card-title>
         </v-row>

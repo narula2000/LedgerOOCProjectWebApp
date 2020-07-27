@@ -23,7 +23,7 @@
         
         <v-card-title>
           <div>
-            <v-icon> mdi-format-align-middle</v-icon>
+            <v-icon>mdi-cash-100</v-icon>
           </div>
         </v-card-title>
         </v-row>
@@ -41,7 +41,7 @@
          
         <v-card-title>
           <div>
-            <v-icon> mdi-format-align-middle</v-icon>
+            <v-icon>mdi-trophy-award</v-icon>
           </div>
         </v-card-title>
         </v-row>
@@ -59,7 +59,7 @@
        
         <v-card-title>
           <div>
-            <v-icon> mdi-format-align-middle</v-icon>
+            <v-icon> mdi-gift</v-icon>
           </div>
         </v-card-title>
         </v-row>
@@ -77,7 +77,7 @@
         
         <v-card-title>
           <div>
-            <v-icon> mdi-format-align-middle</v-icon>
+            <v-icon> mdi-sale</v-icon>
           </div>
         </v-card-title>
         </v-row>
@@ -98,7 +98,7 @@
          
         <v-card-title>
           <div>
-            <v-icon> mdi-format-align-middle</v-icon>
+            <v-icon> mdi-home</v-icon>
           </div>
         </v-card-title>
         </v-row>
@@ -117,7 +117,7 @@
           
         <v-card-title>
           <div>
-            <v-icon> mdi-format-align-middle</v-icon>
+            <v-icon> mdi-step-backward</v-icon>
           </div>
         </v-card-title>
         </v-row>
@@ -136,7 +136,7 @@
         
         <v-card-title>
           <div>
-            <v-icon> mdi-format-align-middle</v-icon>
+            <v-icon> mdi-cash</v-icon>
           </div>
         </v-card-title>
         </v-row>
@@ -154,7 +154,7 @@
           
         <v-card-title>
           <div>
-            <v-icon> mdi-format-align-middle</v-icon>
+            <v-icon> mdi-numeric-0-box-multiple-outline</v-icon>
           </div>
         </v-card-title>
         </v-row>
@@ -192,7 +192,7 @@
          
         <v-card-title>
           <div>
-            <v-icon> mdi-format-align-middle</v-icon>
+            <v-icon> mdi-google-analytics</v-icon>
           </div>
         </v-card-title>
         </v-row>

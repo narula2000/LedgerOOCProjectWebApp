@@ -4,62 +4,24 @@ import javax.persistence.*;
 
 public class AppUser {
 
-    long id;
+    String userId;
     String username;
     String password;
     String confirmPassword;
-    String name;
-    String surname;
 
     public AppUser() {
 
     }
 
-    public AppUser(String name, String surname) {
-        this.name = name;
-        this.surname = surname;
-    }
-
-    public AppUser(Long userId, String userName) {
-        this.id = userId;
+    public AppUser(String userId, String userName) {
+        this.userId = userId;
         this.username = userName;
     }
 
-    public AppUser(Long userId, String userName, String encryptedPassword) {
-        this.id = userId;
+    public AppUser(String userId, String userName, String encryptedPassword) {
+        this.userId = userId;
         this.username = userName;
         this.password = encryptedPassword;
-    }
-
-    public AppUser(String username, String password, String name, String surname) {
-        this.username = username;
-        this.password = password;
-        this.name = name;
-        this.surname = surname;
-    }
-
-    public AppUser(String username, String password, String confirmPassword, String name, String surname) {
-        this.username = username;
-        this.password = password;
-        this.confirmPassword = confirmPassword;
-        this.name = name;
-        this.surname = surname;
-    }
-
-    public String getSurname() {
-        return surname;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getConfirmPassword() {
@@ -78,8 +40,8 @@ public class AppUser {
         return password;
     }
 
-    public long getId() {
-        return id;
+    public String getUserId() {
+        return userId;
     }
 
     public void setUsername(String username) {
@@ -90,8 +52,8 @@ public class AppUser {
         this.password = password;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
     @Override

@@ -9,9 +9,9 @@ public class AppJwt {
     private List<String> roles;
     private AppUser userInfo = new AppUser();
 
-    public AppJwt(String accessToken, Long id, String username, List<String> roles) {
+    public AppJwt(String accessToken, String userId, String username, List<String> roles) {
         this.token = accessToken;
-        this.userInfo.setId(id);
+        this.userInfo.setUserId(userId);
         this.userInfo.setUsername(username);
         this.roles = roles;
         this.type = "Bearer";

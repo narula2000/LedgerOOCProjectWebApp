@@ -22,12 +22,9 @@ public class UserMapper implements RowMapper<AppUser> {
     @Override
     public AppUser mapRow(ResultSet rs, int rowNum) throws SQLException {
         AppUser appUser = new AppUser();
-        appUser.setId( rs.getLong("USER_ID"));
-        appUser.setUsername(rs.getString("USER_NAME"));
+        appUser.setUserId( rs.getString("userId"));
+        appUser.setUsername(rs.getString("userName"));
         appUser.setPassword(rs.getString("ENCRYPTED_PASSWORD"));
-        appUser.setName(rs.getString("USER_REAL_NAME"));
-        appUser.setSurname(rs.getString("USER_REAL_SURNAME"));
-
         return appUser;
     }
 }

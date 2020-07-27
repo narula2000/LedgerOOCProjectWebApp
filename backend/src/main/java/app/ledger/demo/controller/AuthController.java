@@ -57,7 +57,7 @@ public class AuthController {
         List<String> roles = adminService.getRoles(findingUser);
 
         return ResponseEntity.ok(new AppJwt(jwt,
-                findingUser.getId(),
+                findingUser.getUserId(),
                 findingUser.getUsername(),
                 roles));
     }

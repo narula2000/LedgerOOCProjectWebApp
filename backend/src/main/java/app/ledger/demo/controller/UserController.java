@@ -1,7 +1,6 @@
 package app.ledger.demo.controller;
 
 
-import app.ledger.demo.model.AppTask;
 import app.ledger.demo.model.AppText;
 import app.ledger.demo.model.AppUser;
 import app.ledger.demo.services.AdminService;
@@ -54,88 +53,51 @@ public class UserController {
             return ResponseEntity.status(HttpStatus.FOUND).body(user);
         else return ResponseEntity.status(HttpStatus.NOT_FOUND).body(new AppText("User does not exist, try again."));
     }
-
-    /**
-     * Add task
-     * @param title
-     * @param description
-     * @param dateStart
-     * @param dateEnd
-     * @param username
-     * @return Task
-     */
-
-    @PostMapping(path = "create/{username}/{title}/{description}/{dateStart}/{dateEnd}")
-    public ResponseEntity addTask(@PathVariable("title") String title, @PathVariable("description") String description,
-                                  @PathVariable("dateStart") String dateStart, @PathVariable("dateEnd") String dateEnd,
-                                  @PathVariable("username") String username) {
-        AppTask creating = new AppTask(title, description, dateStart, dateEnd);
-        if (userService.addTask(creating, username))
-            return ResponseEntity.status(HttpStatus.CREATED).body(creating);
-        else return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(new AppText("Bad request, try again."));
-    }
-
-    /**
-     * Display all user's tasks
-     * @param username
-     * @return user's tasks
-     */
-
-    @GetMapping(path = "tasklist/{username}")
-    public ResponseEntity displayAllTasks(@PathVariable("username") String username) {
-        return ResponseEntity.status(HttpStatus.OK).body(userService.getAllTasks(username));
-    }
-
-    /**
-     * Update user's task
-     * @param tid
-     * @param title
-     * @param description
-     * @param dateStart
-     * @param dateEnd
-     * @return Update task
-     */
-    @PostMapping(path = "edit/{tid}/{title}/{description}/{dateStart}/{dateEnd}")
-    public ResponseEntity updateTask(@PathVariable("tid") String tid,
-                                     @PathVariable("title") String title, @PathVariable("description") String description,
-                                     @PathVariable("dateStart") String dateStart, @PathVariable("dateEnd") String dateEnd
-                                     ) {
-        AppTask newTask = new AppTask(title, description, dateStart, dateEnd);
-        if (userService.updateTask(newTask, Long.parseLong(tid)))
-            return ResponseEntity.status(HttpStatus.CREATED).body(new AppText("Updated task info successfully!"));
-        else{
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(new AppText("Update rejected! Invalid date."));
-        }
-    }
-
-    /**
-     * Remove user's task
-     * @param tid
-     * @return Message to tell user that we successfully remove task
-     */
-    @PostMapping(path = "remove/{tid}")
-    public ResponseEntity removeTask(@PathVariable("tid") String tid) {
-        AppTask task = new AppTask();
-        task.setTid(Long.parseLong(tid));
-        userService.removeTask(task);
-        return ResponseEntity.status(HttpStatus.FOUND).body(new AppText("Removed task successfully"));
-    }
+//    /**
+//     * Update user's task
+//     * @param tid
+//     * @param title
+//     * @param description
+//     * @param dateStart
+//     * @param dateEnd
+//     * @return Update task
+//     */
+//    @PostMapping(path = "edit/{tid}/{title}/{description}/{dateStart}/{dateEnd}")
+//    public ResponseEntity updateTask(@PathVariable("tid") String tid,
+//                                     @PathVariable("title") String title, @PathVariable("description") String description,
+//                                     @PathVariable("dateStart") String dateStart, @PathVariable("dateEnd") String dateEnd
+//                                     ) {
+//        AppTask newTask = new AppTask(title, description, dateStart, dateEnd);
+//        if (userService.updateTask(newTask, Long.parseLong(tid)))
+//            return ResponseEntity.status(HttpStatus.CREATED).body(new AppText("Updated task info successfully!"));
+//        else{
+//            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(new AppText("Update rejected! Invalid date."));
+//        }
+//    }
+//
+//    /**
+//     * Remove user's task
+//     * @param tid
+//     * @return Message to tell user that we successfully remove task
+//     */
+//    @PostMapping(path = "remove/{tid}")
+//    public ResponseEntity removeTask(@PathVariable("tid") String tid) {
+//        AppTask task = new AppTask();
+//        task.setTid(Long.parseLong(tid));
+//        userService.removeTask(task);
+//        return ResponseEntity.status(HttpStatus.FOUND).body(new AppText("Removed task successfully"));
+//    }
 
     /**
      * Update user information
      * @param username
      * @param newusername
-     * @param name
-     * @param surname
      * @return Message to user
      */
     @PostMapping(path = "update/{username}/{newusername}/{name}/{surname}")
     public ResponseEntity editUser(@PathVariable("username") String username,
-                                   @PathVariable("newusername") String newusername,
-                                   @PathVariable("name") String name, @PathVariable("surname") String surname) {
+                                   @PathVariable("newusername") String newusername){
         AppUser newInfo = adminService.getUser(username);
-        newInfo.setName(name);
-        newInfo.setSurname(surname);
         newInfo.setUsername(newusername);
         if(adminService.updateUserInfo(username, newInfo)) return ResponseEntity.status(HttpStatus.OK).body(new AppText("Updated user info successfully"));
         else{

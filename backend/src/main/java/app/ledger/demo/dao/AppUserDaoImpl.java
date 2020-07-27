@@ -81,8 +81,7 @@ public class AppUserDaoImpl extends JdbcDaoSupport implements AppUserDao  {
         try{
             Long lastId = getJdbcTemplate().queryForObject(sqlForCount, Long.class)+1;
             Long lastRole = getJdbcTemplate().queryForObject(sqlForCount2, Long.class)+1;
-            Object[] params = new Object[]{ lastId, user.getUsername(), user.getPassword(),
-                    user.getName(), user.getSurname()};
+            Object[] params = new Object[]{ lastId, user.getUsername(), user.getPassword()};
             getJdbcTemplate().update(sqlForInsert1, params);
 
             if(authority>0){
@@ -106,7 +105,7 @@ public class AppUserDaoImpl extends JdbcDaoSupport implements AppUserDao  {
         String sqlForRemove1 = "delete from APP_USER where USER_ID = ?;";
         String sqlForRemove2 = "delete from USER_ROLE where USER_ID = ?;";
         try{
-            Object[] params = new Object[]{ user.getId() };
+            Object[] params = new Object[]{ user.getUserId() };
             getJdbcTemplate().update(sqlForRemove2, params);
             getJdbcTemplate().update(sqlForRemove1, params);
         }catch(EmptyResultDataAccessException e){
@@ -120,11 +119,10 @@ public class AppUserDaoImpl extends JdbcDaoSupport implements AppUserDao  {
     @Override
     public void updateUser(AppUser user){
 
-        String sqlForUpdate = "update APP_USER set USER_NAME = ?, USER_REAL_NAME = ?, USER_REAL_SURNAME = ? " +
+        String sqlForUpdate = "update APP_USER set USER_NAME = ?" +
                 "where USER_ID = ?";
         try{
-            Object[] params = new Object[]{user.getUsername(),
-                    user.getName(), user.getSurname(), user.getId() };
+            Object[] params = new Object[]{user.getUsername(),user.getUserId() };
             getJdbcTemplate().update(sqlForUpdate, params);
         }catch(EmptyResultDataAccessException e){
             System.out.println("Null!");

@@ -79,7 +79,6 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-<<<<<<< HEAD
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-jpa</artifactId>
             <version>2.3.2.RELEASE</version>
@@ -91,13 +90,10 @@
             <version>0.9.1</version>
         </dependency>
         <dependency>
-=======
->>>>>>> work
             <groupId>javax.validation</groupId>
             <artifactId>validation-api</artifactId>
             <version>2.0.1.Final</version>
         </dependency>
-<<<<<<< HEAD
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
@@ -110,8 +106,6 @@
             <version>5.3.3.RELEASE</version>
             <scope>compile</scope>
         </dependency>
-=======
->>>>>>> work
     </dependencies>
 
     <build>

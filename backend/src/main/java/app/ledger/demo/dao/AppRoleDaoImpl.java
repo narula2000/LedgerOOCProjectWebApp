@@ -28,7 +28,7 @@ public class AppRoleDaoImpl extends JdbcDaoSupport implements AppRoleDao {
      * @return role
      */
     @Override
-    public List<String> getRoleNames(Long userId) {
+    public List<String> getRoleNames(String userId) {
         String sql = "Select r.Role_Name " //
                 + " from USER_ROLE ur, APP_ROLE r " //
                 + " where ur.Role_Id = r.Role_Id and ur.User_Id = ? ";

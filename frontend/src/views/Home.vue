@@ -2,7 +2,7 @@
 <v-app class="theme--light">
 <v-container>
   <div class="index">
-    <v-app class="theme--dark">
+    <v-app class="theme--light">
       <v-row class="text-center">
         <v-col cols="12">
           

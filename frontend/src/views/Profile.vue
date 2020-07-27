@@ -1,6 +1,6 @@
 
 <template>
-  <v-app id="inspire" class="theme--dark">
+  <v-app id="inspire" class="theme--light">
     <v-app-bar
       app
     >
@@ -36,8 +36,6 @@
       <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
   </v-app>
-
-</v-app>
 </template>
 
 <script>

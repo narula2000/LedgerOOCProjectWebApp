@@ -1,11 +1,7 @@
 <template>
   <div class="col-md-12">
     <div class="card card-container">
-      <img
-        id="profile-img"
-        src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
-        class="profile-img-card"
-      />
+      
       <form name="form" @submit.prevent="handleRegister">
         <div v-if="!successful">
           <div class="form-group">
@@ -55,15 +51,15 @@
           </div>
         </div>
         <v-btn to="/login" class="mr-3" text medium color="primary"> sign-in </v-btn>
-        <v-btn icon>
+       
         <v-icon>mdi-account-key</v-icon>
-        </v-btn>
+       
         <br>
         <br>
         <v-btn to="/home" class="mr-3" text medium> home </v-btn>
-        <v-btn icon>
+       
         <v-icon>mdi-home-circle</v-icon>
-        </v-btn>
+       
       </form>
       
 

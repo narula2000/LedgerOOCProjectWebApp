@@ -1,14 +1,14 @@
 <template>
-<v-app class="theme--dark">
+<v-app class="theme--light">
 <nav>
 
       <v-toolbar-title class="text-center">User Profile</v-toolbar-title>
 
       <v-spacer></v-spacer>
     
-      <v-btn to="/login" class="mr-3" text medium color="white"> 
+      <v-btn to="/login" class="mr-3" text medium color="black"> 
       <span>sign-out </span>
-      <v-icon color="white">mdi-exit-to-app</v-icon>
+      <v-icon color="black">mdi-exit-to-app</v-icon>
       </v-btn>
 
       

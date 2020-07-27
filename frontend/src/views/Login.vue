@@ -6,6 +6,7 @@
         src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
         class="profile-img-card"
       />
+      
       <form name="form" @submit.prevent="handleLogin">
         <div class="form-group">
           <label for="username">Username</label>

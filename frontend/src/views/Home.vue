@@ -1,7 +1,8 @@
 <template>
-
+<v-app class="theme--light">
+<v-container>
   <div class="index">
-    <v-app class="theme--light">
+    <v-app class="theme--dark">
       <v-row class="text-center">
         <v-col cols="12">
           
@@ -17,9 +18,9 @@
                 class="mb-5"
                 cols="12"
         >
-          <v-btn to="/register" class="mr-3" x-large color="black" dark> sign-up </v-btn>
+          <v-btn to="/register" class="mr-3" x-large color="cyan" dark> sign-up </v-btn>
 
-          <v-btn to="/login" class="ml-3" x-large color="black" dark> log-in </v-btn>
+          <v-btn to="/login" class="ml-3" x-large color="cyan" dark> sign-in </v-btn>
 
         </v-col>
 
@@ -37,6 +38,8 @@
       </v-row>
     </v-app>
   </div>
+</v-container>
+</v-app>
 </template>
 
 <script>

@@ -1,32 +1,41 @@
 
 <template>
-<v-app class="theme--light">
-<v-container >
-  <v-app class="theme--light">
-  <v-card >
-    <v-toolbar flat color="cyan" class="theme--dark">
+  <v-app id="inspire" class="theme--dark">
+    <v-app-bar
+      app
+    >
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-toolbar-title>Profile</v-toolbar-title>
+    </v-app-bar>
 
-      <v-toolbar-title class="text-center">User Profile</v-toolbar-title>
+    <v-main>
+      <v-container
+        class="fill-height"
+        fluid
+      >
+        <v-row
+          align="center"
+          justify="center"
+        >
+          <v-col class="shrink">
+            <v-tooltip right>
+              <template v-slot:activator="{  }">
+                <v-btn to="/history"
+                >
+                  <v-icon  x-large>mdi-code-tags</v-icon>
+                </v-btn>
+              </template>
+              <span>Source</span>
+            </v-tooltip>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-main>
 
-      <v-spacer></v-spacer>
-    
-      <v-btn to="/login" class="mr-3" text medium color="white"> 
-      <span>sign-out </span>
-      <v-icon color="white">mdi-exit-to-app</v-icon>
-      </v-btn>
-
-      
-    </v-toolbar>
-
-       
-        <v-card flat>
-        </v-card>
-  </v-card>
+    <v-footer app>
+      <span>&copy; {{ new Date().getFullYear() }}</span>
+    </v-footer>
   </v-app>
-  <v-btn fab depressed x-large dark color="purple">
-       <v-icon>mdi-account-plus</v-icon>
-  </v-btn> 
-</v-container>
 
 </v-app>
 </template>

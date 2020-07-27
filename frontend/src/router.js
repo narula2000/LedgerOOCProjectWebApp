@@ -33,6 +33,12 @@ export const router = new Router({
       component: () => import('./views/Profile.vue')
     },
     {
+      path: '/history',
+      name: 'history',
+      // lazy-loaded
+      component: () => import('./views/History.vue')
+    },
+    {
       path: '/admin',
       name: 'admin',
       // lazy-loaded

@@ -18,8 +18,8 @@
           align="center"
           justify="center"
         >
-        <v-btn fab color="red" dark outlined >foods </v-btn>
-         
+        <v-btn color="red" dark outlined >foods </v-btn>
+
         <v-card-title>
           <div>
             <v-icon right> mdi-food-fork-drink</v-icon>
@@ -36,9 +36,9 @@
           align="center"
           justify="center"
         >
-        <v-btn fab color="red" dark outlined >transportation </v-btn>
-         
-          
+        <v-btn   color="red" dark outlined >transportation </v-btn>
+
+
         <v-card-title>
           <div>
             <v-icon right> mdi-bus</v-icon>
@@ -55,9 +55,9 @@
           align="center"
           justify="center"
         >
-        <v-btn fab color="red" dark outlined >car </v-btn>
-         
-        
+        <v-btn   color="red" dark outlined >car </v-btn>
+
+
         <v-card-title>
           <div>
             <v-icon> mdi-car</v-icon>
@@ -73,9 +73,9 @@
           align="center"
           justify="center"
         >
-        <v-btn fab color="red" dark outlined >entertainment </v-btn>
-         
-         
+        <v-btn   color="red" dark outlined >entertainment </v-btn>
+
+
         <v-card-title>
           <div>
             <v-icon> mdi-popcorn</v-icon>
@@ -94,9 +94,9 @@
           align="center"
           justify="center"
         >
-        <v-btn fab color="red" dark outlined >insurance </v-btn>
-         
-        
+        <v-btn   color="red" dark outlined >insurance </v-btn>
+
+
         <v-card-title>
           <div>
             <v-icon> mdi-pencil-circle</v-icon>
@@ -113,9 +113,9 @@
           align="center"
           justify="center"
         >
-        <v-btn fab color="red" dark outlined >tax </v-btn>
-         
-          
+        <v-btn   color="red" dark outlined >tax </v-btn>
+
+
         <v-card-title>
           <div>
             <v-icon> mdi-format-align-middle</v-icon>
@@ -132,9 +132,9 @@
           align="center"
           justify="center"
         >
-        <v-btn fab color="red" dark outlined >telephone</v-btn>
-         
-        
+        <v-btn   color="red" dark outlined >telephone</v-btn>
+
+
         <v-card-title>
           <div>
             <v-icon> mdi-cellphone</v-icon>
@@ -150,9 +150,9 @@
           align="center"
           justify="center"
         >
-        <v-btn fab color="red" dark outlined >health </v-btn>
-         
-          
+        <v-btn   color="red" dark outlined >health </v-btn>
+
+
         <v-card-title>
           <div>
             <v-icon> mdi-hospital</v-icon>
@@ -171,9 +171,9 @@
           align="center"
           justify="center"
         >
-        <v-btn fab color="red" dark outlined >education </v-btn>
-         
-          
+        <v-btn   color="red" dark outlined >education </v-btn>
+
+
         <v-card-title>
           <div>
             <v-icon> mdi-school</v-icon>
@@ -190,9 +190,9 @@
           align="center"
           justify="center"
         >
-        <v-btn fab color="red" dark outlined >travel </v-btn>
-         
-          
+        <v-btn   color="red" dark outlined >travel </v-btn>
+
+
         <v-card-title>
           <div>
             <v-icon> mdi-wallet-travel</v-icon>

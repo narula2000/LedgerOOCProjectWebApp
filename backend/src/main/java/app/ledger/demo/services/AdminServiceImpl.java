@@ -84,8 +84,8 @@ public class AdminServiceImpl implements AdminService {
         else{           // User does not exist
             result = false;
         }
-        if(!user.getName().isEmpty()) appUser.setName(user.getName());
-        if(!user.getSurname().isEmpty()) appUser.setSurname(user.getSurname());
+//        if(!user.getName().isEmpty()) appUser.setName(user.getName());
+//        if(!user.getSurname().isEmpty()) appUser.setSurname(user.getSurname());
         if(passwordEncoder.matches(user.getConfirmPassword(), appUser.getPassword())) this.appUserDao.updateUser(appUser);
         return result;
     }
@@ -143,6 +143,6 @@ public class AdminServiceImpl implements AdminService {
      */
     @Override
     public List<String> getRoles(AppUser user){
-        return this.appRoleDao.getRoleNames(this.appUserDao.findUserAccount(user.getUsername()).getId());
+        return this.appRoleDao.getRoleNames(this.appUserDao.findUserAccount(user.getUsername()).getUserId());
     }
 }

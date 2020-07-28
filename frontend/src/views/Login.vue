@@ -1,11 +1,12 @@
 <template>
   <div class="col-md-12">
     <div class="card card-container">
-      <img
-        id="profile-img"
-        src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
-        class="profile-img-card"
-      />
+      <header>
+        <h3>
+          Login
+        </h3>
+      </header>
+
       <form name="form" @submit.prevent="handleLogin">
         <div class="form-group">
           <label for="username">Username</label>
@@ -40,12 +41,27 @@
         <div class="form-group">
           <button class="btn btn-primary btn-block" :disabled="loading">
             <span v-show="loading" class="spinner-border spinner-border-sm"></span>
-            <span>Login</span>
+            <span>Sign-In</span>
           </button>
         </div>
+        <v-row align="center" justify="center">
+        <v-btn class="mr-3" text medium color="primary"><router-link to="/register" tag="li">sign-up</router-link>
+                <v-icon>mdi-account-plus</v-icon></v-btn>
+        <br>
+        <br>
+        <v-btn class="mr-3" text medium >
+          <router-link to="/home" tag="li">
+          home
+          </router-link>
+            <v-icon>mdi-home-circle</v-icon>
+        </v-btn>
+        <v-btn icon>
+        </v-btn>
+        </v-row>
         <div class="form-group">
           <div v-if="message" class="alert alert-danger" role="alert">{{message}}</div>
         </div>
+
       </form>
     </div>
   </div>
@@ -53,6 +69,7 @@
 
 <script>
 import User from '../models/user';
+
 export default {
   name: 'Login',
   data() {
@@ -80,6 +97,7 @@ export default {
           this.loading = false;
           return;
         }
+
         if (this.user.username && this.user.password) {
           this.$store.dispatch('auth/login', this.user).then(
             () => {
@@ -105,10 +123,12 @@ label {
   display: block;
   margin-top: 10px;
 }
+
 .card-container.card {
   max-width: 350px !important;
   padding: 40px 40px;
 }
+
 .card {
   background-color: #f7f7f7;
   padding: 20px 25px 30px;
@@ -121,6 +141,7 @@ label {
   -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
+
 .profile-img-card {
   width: 96px;
   height: 96px;

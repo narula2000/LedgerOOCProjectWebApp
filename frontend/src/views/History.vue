@@ -20,7 +20,7 @@
 
   <v-data-table
     :headers="headers"
-    :items="deposit"
+    :items="date"
     :items-per-page="5"
     class="elevation-1"
   ></v-data-table>
@@ -28,22 +28,57 @@
 </v-app>
 </template>
 
+
 <script>
   export default {
     data () {
       return {
         headers: [
           {
-            text: 'Name',
+            text: 'date ',
             align: 'start',
             sortable: false,
-            value: 'name',
+            value: 'date',
           },
-          { text: 'change'},
-          { text: 'Use'},
-          { text: 'Final' },
+          { text: 'Categories', value: 'c' },
+          { text: 'Value', value: 'v' },
+          { text: 'Changes', value: 'ch' },
         ],
-
+        date: [
+          {
+            date: '01/07/20',
+            c: 'Salary',
+            v: 2000,
+            ch: 'Income',
+            protein: 4.0,
+            iron: '1%',
+          },
+          {
+            date: '03/07/20',
+            c: 'Dividends',
+            v: 20000,
+            ch: 'Income',
+            protein: 4.0,
+            iron: '1%',
+          },
+         {
+            date: '04/07/20',
+            c: 'Health',
+            v: 1200,
+            ch: 'Expense',
+            protein: 4.0,
+            iron: '1%',
+          },
+          {
+            date: '04/07/20',
+            c: 'Lottery',
+            v: 3000,
+            ch: 'Income',
+            protein: 4.0,
+            iron: '1%',
+          },
+          
+        ],
       }
     },
   }

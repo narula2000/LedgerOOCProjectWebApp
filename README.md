@@ -2,7 +2,7 @@
 
 This is a project of an OOC class, it's a group project. The goal is for us to build a web app.
 
-We have chose to do a ledger where user can keep track of their income and expenses with the data display informatively.
+We have chosen to do a ledger where users can keep track of their incomes and expenses with the data displayed informatively.
 
 
 ### Members 

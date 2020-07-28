@@ -9,8 +9,10 @@
       justify="center"
     >
     <h1 center> User Profile </h1>
+    
     </v-row>
     <br>
+    <v-btn text small to="/login" color="black" >log out </v-btn>
     <br>
 <v-layout >
     <v-flex xs12 md4>

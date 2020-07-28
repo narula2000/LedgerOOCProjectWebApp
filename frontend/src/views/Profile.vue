@@ -1,45 +1,71 @@
 
 <template>
   <v-app id="inspire" class="theme--light">
-    <v-app-bar
-      app
-    >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>Profile</v-toolbar-title>
-    </v-app-bar>
+   
 
-    <v-main>
-      <v-container
-        class="fill-height"
-        fluid
-      >
-        <v-row
+   <v-container grid-list-xl>
+     <v-row
+      align="center"
+      justify="center"
+    >
+    <h1 center> User Profile </h1>
+    </v-row>
+    <br>
+    <br>
+<v-layout >
+    <v-flex xs12 md4>
+      <v-card color="white" height=500>
+           <v-row
+          align="center"
+          justify="center"
+        ><v-col
           align="center"
           justify="center"
         >
-          <v-col class="shrink">
-            <v-tooltip right>
-              <template v-slot:activator="{  }">
-                <v-btn to="/history">
-                  <v-icon  x-large>mdi-code-tags</v-icon>
-                </v-btn>
-                <v-btn to="/income">
-                  <v-icon  x-large>mdi-code-tags</v-icon>
-                </v-btn>
-                <v-btn to="/expense">
-                  <v-icon  x-large>mdi-code-tags</v-icon>
-                </v-btn>
-              </template>
-              <span>Source</span>
-            </v-tooltip>
-          </v-col>
+        <v-btn width="125" height="450" to="/history" color="black" dark outlined>User History </v-btn>
+        <br>
+        </v-col>
         </v-row>
-      </v-container>
-    </v-main>
+      </v-card>
+    </v-flex>
+
+    <v-flex xs12 md4>
+      <v-card height=500>
+           <v-row
+          align="center"
+          justify="center"
+        ><v-col
+          align="center"
+          justify="center"
+        >
+        <v-btn width="125" height="450" to="/income" color="success" dark outlined>Income </v-btn>
+        <br>
+        </v-col>
+        </v-row>
+      </v-card>
+    </v-flex>
+
+    <v-flex xs12 md4>
+      <v-card height=500>
+           <v-row
+          align="center"
+          justify="center"
+        ><v-col
+          align="center"
+          justify="center"
+        >
+        <v-btn width="125" height="450" to="/expense"  color="red" dark outlined>Expense </v-btn>
+        <br>
+        </v-col>
+        </v-row>
+      </v-card>
+    </v-flex>
 
     <v-footer app>
       <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
+</v-layout>
+   </v-container>
   </v-app>
 </template>
 
@@ -48,8 +74,7 @@
     data () {
       return {
         tabs: null,
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      }
+        }
     },
   }
 </script>

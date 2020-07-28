@@ -15,10 +15,10 @@ import java.util.Date;
 public class JwtUtils {
     private static final Logger logger = LoggerFactory.getLogger(JwtUtils.class);
 
-    @Value("${squishtable.app.jwtSecret}")
+    @Value("${ledgerOOCProjectWebApp.app.jwtSecret}")
     private String jwtSecret;
 
-    @Value("${squishtable.app.jwtExpirationMs}")
+    @Value("${ledgerOOCProjectWebApp.app.jwtExpirationMs}")
     private int jwtExpirationMs;
 
     public String generateJwtToken(Authentication authentication) {
